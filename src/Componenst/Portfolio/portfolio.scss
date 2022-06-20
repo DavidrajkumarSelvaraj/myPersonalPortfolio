@@ -1,0 +1,56 @@
+.portfolio {
+  background-color: darkslategrey;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-size: 30px;
+  }
+  ul {
+    font-size: 15px;
+    margin: 10px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  .container {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    .item {
+      width: 220px;
+      height: 150px;
+      border-radius: 20px;
+      border: 1px solid black;
+      position: relative;
+      margin: 10px 20px;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      cursor: pointer;
+
+      h3 {
+        position: absolute;
+        color: darkslategray;
+        font-weight: 700;
+      }
+      img {
+        z-index: 2;
+      }
+      &:hover {
+        background-color: white;
+        img {
+          z-index: 0;
+          opacity: 0.3;
+        }
+      }
+    }
+  }
+}

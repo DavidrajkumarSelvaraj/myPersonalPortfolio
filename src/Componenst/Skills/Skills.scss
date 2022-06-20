@@ -1,0 +1,42 @@
+.skills {
+  background-color: white;
+  color: darkseagreen;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  ul {
+    list-style: none;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+  }
+  .container {
+    width: 70%;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    .item {
+      width: 170px;
+      height: 150px;
+      margin: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      // animation: skills 5s infinite;
+
+      @keyframes skills {
+        50% {
+          transform: rotate(180deg);
+          transform: rotate(180deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    }
+  }
+}

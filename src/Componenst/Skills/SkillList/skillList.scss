@@ -1,0 +1,22 @@
+.skillList {
+  margin-right: 20px;
+  background-color: darkseagreen;
+  color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10%;
+  &:hover {
+    border: 2px solid darkseagreen;
+    background-color: white;
+    color: darkseagreen;
+    cursor: pointer;
+    font-weight: 700;
+  }
+  &.active {
+    border: solid 2px darkseagreen;
+    background-color: white;
+    color: darkseagreen;
+  }
+}
